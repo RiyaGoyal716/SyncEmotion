@@ -1,8 +1,12 @@
-export default function Home() {
+// src/pages/Home.jsx
+import Hero from "../components/Hero"; // ✅ Import the Hero component
+
+const Home = () => {
   return (
-    <div className="bg-blue-500 text-white p-12 rounded-md shadow-lg max-w-xl text-center">
-      <h1 className="text-3xl font-bold mb-4">Home Page is Working!</h1>
-      <p>This red-blue panel is styled with Tailwind.</p>
+    <div className="flex flex-col items-center justify-center text-center py-20 px-4">
+      <Hero /> {/* ✅ Rendering the Hero section */}
     </div>
   );
-}
+};
+
+export default Home;
